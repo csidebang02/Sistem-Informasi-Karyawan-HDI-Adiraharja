@@ -1,0 +1,217 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="js/jquery/ui-lightness/jquery-ui-1.10.2.custom.css" />
+    <link rel="stylesheet" href="../karyawan/css/bootstrap3.css">
+    <script type="text/javascript" src="js/jquery/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-ui-1.10.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/primitives.min.js"></script>
+    <link href="css/primitives.latest.css" media="screen"  rel="stylesheet" type="text/css" />
+    <script type='text/javascript'>//<![CDATA[ 
+        $(window).load(function () {
+            var options = new primitives.orgdiagram.Config();
+
+            var items = [
+                new primitives.orgdiagram.ItemConfig({
+                    id: 0,
+                    parent: null,
+                    title: "President Director",
+                    description: "Mr. Ibnu Wardani",
+                    image: "images/photos/a.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 1,
+                    parent: 0,
+                    title: "Director Of Project & Implementation",
+                    description: "Mr. Ibnu Wardani",
+                    image: "images/photos/b.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 2,
+                    parent: 0,
+                    title: "Director Of Business Support",
+                    description: "Mr. Haryo F. R. Hutama",
+                    image: "images/photos/b.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 3,
+                    parent: 0,
+                    title: "Director of Finance",
+                    description: "Mr. Dimas J. M. Kalangie",
+                    image: "images/photos/b.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 4,
+                    parent: 0,
+                    title: "Director of External",
+                    description: "Mr. Ibnu Wardani",
+                    image: "images/photos/b.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 5,
+                    parent: 0,
+                    title: "Director of Business Development",
+                    description: "Mr. Haryo F. R. Hutama",
+                    image: "images/photos/b.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 6,
+                    parent: 1,
+                    title: "Project Innovation Department",
+                    description: "Mrs. Aulia Oktaviani",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 7,
+                    parent: 1,
+                    title: "Project Implementation Department",
+                    description: "Mr. Rio A. W. Putra",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 8,
+                    parent: 2,
+                    title: "Talent & Human Capital Service Dapartment",
+                    description: "Mr. Haryo F. R. Hutama",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 9,
+                    parent: 2,
+                    title: "General Affair Department",
+                    description: "Mr. Rivan Framudiana",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 10,
+                    parent: 2,
+                    title: "Knowledge Management Department",
+                    description: "Mr. Rivan framudiana",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 11,
+                    parent: 2,
+                    title: "Procurement Department",
+                    description: "Mr. Rivan Framudiana",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 12,
+                    parent: 2,
+                    title: "Quality Management Department",
+                    description: "Mr. Haryo F. R. Hutama",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 13,
+                    parent: 3,
+                    title: "Account Receivable Dapartment",
+                    description: "Mr. Dimas J.M. Kalangie",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 14,
+                    parent: 3,
+                    title: "Account Payable Department",
+                    description: "Mrs. Bourinta U. Simatupang ",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 15,
+                    parent: 3,
+                    title: "Project Implementation Report Department",
+                    description: "Mr. Dimas J. M. Kalangie",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 16,
+                    parent: 3,
+                    title: "Legal Department",
+                    description: "",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 17,
+                    parent: 3,
+                    title: "Audit Department",
+                    description: "Mrs. Bourinta U. Simatupang",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 18,
+                    parent: 4,
+                    title: "External Department",
+                    description: "Mr. Ibnu Wardani",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 19,
+                    parent: 4,
+                    title: "Public Relation Department",
+                    description: "Mr. Haries Sukandar",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 20,
+                    parent: 18,
+                    title: "Marketing Strategy Division",
+                    description: "",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 21,
+                    parent: 18,
+                    title: "Customer Relation Division",
+                    description: "Mr. Ibnu Wardani",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 22,
+                    parent: 19,
+                    title: "Media Strategy Division",
+                    description: "Mr. Haries Sukandar",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 23,
+                    parent: 19,
+                    title: "Public Awareness",
+                    description: "Mrs. Angela Dini",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 24,
+                    parent: 5,
+                    title: "HDI Production House",
+                    description: "Mr. Kurnia A. Nusaputra & Mrs. Tya",
+                    image: "images/photos/c.png"
+                }),
+                new primitives.orgdiagram.ItemConfig({
+                    id: 25,
+                    parent: 5,
+                    title: "HDI Sports Club",
+                    description: "Mr. Aldico S. Ganesha & Mrs. Genik A. Pratami",
+                    image: "images/photos/c.png"
+                })
+            ];
+
+            options.items = items;
+            options.cursorItem = 0;
+            options.hasSelectorCheckbox = primitives.common.Enabled.True;
+
+            jQuery("#organisasi").orgDiagram(options);
+        });//]]>  
+
+    </script>
+</head>
+<body>
+    <div class="container col-lg-12 col-md-12 col-xs-12">
+        <div id="organisasi" style="height: 600px; " >
+    </div>
+    <center>
+    <a href="../karyawan/index.php" class="btn btn-warning btn-block" style="width:150px; margin-top: 10px;"><i class="fa fa-edit"></i>Kembali</a>
+    </center>
+</body>
+</html>
